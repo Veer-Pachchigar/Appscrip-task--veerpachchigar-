@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "../Styles/Header.css";
 import search from "../assets/search-normal.png"
+import heart from "../assets/heart.png";
+import cart from "../assets/shopping-bag.png";
+import profile from "../assets/profile.png";
+import lang from "../assets/Language.png";
 import logo from "../assets/Logo-1.png";  // Import Logo-1.png
 
 const Header = () => {
@@ -20,6 +24,7 @@ const Header = () => {
         <div className="logo-container">
           {/* Logo Image */}
           <img src={logo} alt="Logo" className="logo-img" />
+         
         </div>
         
         {/* Centered LOGO Text */}
@@ -28,10 +33,14 @@ const Header = () => {
         <div className="header-right">
           <div className="icons">
             <img src={search} />
-            <i className="fas fa-search"></i>
+            <imp src={heart}/>
+            <img src={cart}/>
+            <img src={profile}/>
+            <img src={lang}/>
+            {/* <i className="fas fa-search"></i> */}
             <i className="fas fa-heart"></i>
-            <i className="fas fa-shopping-cart"></i>
-            <i className="fas fa-user"></i>
+            {/* <i className="fas fa-shopping-cart"></i> */}
+            {/* <i className="fas fa-user"></i> */}
           </div>
           <div className="language" onClick={toggleDropdown}>
             <i className="fas fa-globe"></i> {/* Language Icon */}
