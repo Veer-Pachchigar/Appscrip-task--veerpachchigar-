@@ -1,0 +1,23 @@
+.discover-section {
+    text-align: center;
+    margin: 30px 20px;
+  }
+  
+  .discover-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .discover-description {
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    color: #555;
+    line-height: 1.5;
+  }
+  .discover-description {
+    white-space: pre-line;
+  }
+  
