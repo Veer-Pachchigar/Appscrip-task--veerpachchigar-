@@ -6,10 +6,8 @@ const DiscoverSection = () => {
     <section className="discover-section">
       <h1 className="discover-title">DISCOVER OUR PRODUCTS</h1>
       <p className="discover-description">
-  Lorem ipsum dolor sit amet consectetur.<br />
-  Amet est posuere rhoncus scelerisque.<br />
-  Dolor integer scelerisque nibh amet mi ut elementum dolor.
-</p>
+      Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus <br />scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.
+      </p>
 
     </section>
   );

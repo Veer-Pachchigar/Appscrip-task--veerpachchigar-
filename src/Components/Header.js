@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/Header.css";
+import search from "../assets/search-normal.png"
 import logo from "../assets/Logo-1.png";  // Import Logo-1.png
 
 const Header = () => {
@@ -22,10 +23,11 @@ const Header = () => {
         </div>
         
         {/* Centered LOGO Text */}
-        <div className="logo-text">LOGO</div>
+        <div className="logo-text"> <strong>LOGO</strong> </div>
 
         <div className="header-right">
           <div className="icons">
+            <img src={search} />
             <i className="fas fa-search"></i>
             <i className="fas fa-heart"></i>
             <i className="fas fa-shopping-cart"></i>
@@ -45,11 +47,11 @@ const Header = () => {
         </div>
       </div>
       <nav className="nav-menu">
-        <a href="#shop">SHOP</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#stories">STORIES</a>
-        <a href="#about">ABOUT</a>
-        <a href="#contact">CONTACT US</a>
+        <a href="#shop"> <strong>SHOP</strong> </a>
+        <a href="#shop"> <strong>SKILLS</strong> </a>
+        <a href="#shop"> <strong>STORIES</strong> </a>
+        <a href="#shop"> <strong>ABOUT</strong> </a>
+        <a href="#shop"> <strong>CONTACT US</strong> </a>
       </nav>
     </header>
   );
