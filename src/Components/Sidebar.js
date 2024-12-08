@@ -29,11 +29,15 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar-container">
-      <div className="toggle-container">
-        <button className="toggle-button" onClick={toggleSidebar}>
-          {isSidebarVisible ? "< HIDE FILTER" : " > SHOW FILTER"}
-        </button>
+      <div className="top-row">
+        <p className="items-count">3425 ITEMS</p>
+        <div className="toggle-container">
+          <button className="toggle-button" onClick={toggleSidebar}>
+            {isSidebarVisible ? "< HIDE FILTER" : " > SHOW FILTER"}
+          </button>
+        </div>
       </div>
+
       {isSidebarVisible && (
         <div className="sidebar">
           <label className="custom-checkbox">
