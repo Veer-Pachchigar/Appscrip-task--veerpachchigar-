@@ -14,6 +14,7 @@ const Sidebar = () => {
   });
 
   const [openSections, setOpenSections] = useState({});
+  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
 
   const toggleSection = (section) => {
     setOpenSections((prev) => ({
@@ -22,30 +23,43 @@ const Sidebar = () => {
     }));
   };
 
+  const toggleSidebar = () => {
+    setIsSidebarVisible((prev) => !prev);
+  };
+
   return (
-    <div className="sidebar">
-      <label className="custom-checkbox">
-        <input type="checkbox" />
-        Customizable
-      </label>
-      <div className="filter">
-        {Object.keys(filters).map((filter) => (
-          <div key={filter} className="filter-item">
-            <div
-              className="filter-title"
-              onClick={() => toggleSection(filter)}
-            >
-              {filter}
-              <span className="arrow">
-                {openSections[filter] ? "▲" : "▼"}
-              </span>
-            </div>
-            {openSections[filter] && (
-              <div className="filter-content">{filters[filter]}</div>
-            )}
-          </div>
-        ))}
+    <div className="sidebar-container">
+      <div className="toggle-container">
+        <button className="toggle-button" onClick={toggleSidebar}>
+          {isSidebarVisible ? "< HIDE FILTER" : " > SHOW FILTER"}
+        </button>
       </div>
+      {isSidebarVisible && (
+        <div className="sidebar">
+          <label className="custom-checkbox">
+            <input type="checkbox" />
+            Customizable
+          </label>
+          <div className="filter">
+            {Object.keys(filters).map((filter) => (
+              <div key={filter} className="filter-item">
+                <div
+                  className="filter-title"
+                  onClick={() => toggleSection(filter)}
+                >
+                  {filter}
+                  <span className="arrow">
+                    {openSections[filter] ? "▲" : "▼"}
+                  </span>
+                </div>
+                {openSections[filter] && (
+                  <div className="filter-content">{filters[filter]}</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

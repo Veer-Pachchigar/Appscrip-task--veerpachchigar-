@@ -20,4 +20,40 @@
   .discover-description {
     white-space: pre-line;
   }
+  .discover-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .discover-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .discover-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .dropdown-container {
+    display: flex;
+    justify-content: flex-end; /* Align dropdown to the right */
+    margin-top: 10px;
+  }
+  
+  .dropdown-select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .dropdown-select:hover {
+    border-color: #007bff;
+  }
   
