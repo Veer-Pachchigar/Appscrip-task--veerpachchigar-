@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
       <div className="product-content">
         <h3 className="product-title">{product.title}</h3>
         <p className="product-link">
-          <a href="#">Sign in</a> or Create an account to see pricing
+          <a href="signin">Sign in</a> or Create an account to see pricing
         </p>
       </div>
 
