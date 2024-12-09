@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Styles/Sidebar.css";
 
 const Sidebar = () => {
-  const [filters, setFilters] = useState({
+  const [filters] = useState({
     "Ideal For": "All",
     Occasion: "All",
     Work: "All",
