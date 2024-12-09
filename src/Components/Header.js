@@ -29,10 +29,10 @@ const Header = () => {
 
         <div className="header-right">
           <div className="icons">
-            <img src={search} className="icon" />
-            <img src={heart} className="icon" />
-            <img src={cart} className="icon" />
-            <img src={profile} className="icon" />
+          <img src={search} className="icon" alt="Search icon" />
+            <img src={heart} className="icon" alt="heart icon" />
+            <img src={cart} className="icon" alt="cart icon"/>
+            <img src={profile} className="icon" alt="profile icon"/>
             {/* Replace image with text for language */}
             <div className="language" onClick={toggleDropdown}>
               <span>ENG▼</span>
@@ -41,10 +41,10 @@ const Header = () => {
 
           {isDropdownOpen && (
             <div className="dropdown">
-              <a href="#">ENG</a>
-              <a href="#">ESP</a>
-              <a href="#">FRA</a>
-              <a href="#">DEU</a>
+              <a href="eng">ENG</a>
+              <a href="esp">ESP</a>
+              <a href="fra">FRA</a>
+              <a href="deu">DEU</a>
             </div>
           )}
         </div>
